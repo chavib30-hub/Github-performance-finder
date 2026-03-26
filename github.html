@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GitHub Performance Finder</title>
+    <link rel="stylesheet" href="github.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER WITH GITHUB LOGO -->
+      <div class="header">
+        <img
+          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+          alt="GitHub Logo"
+          class="logo"
+        />
+        <h1 class="title">GitHub Performance Finder</h1>
+      </div>
+      <p class="subtitle">Enter a GitHub username to view performance stats</p>
+
+      <!-- SEARCH BAR -->
+      <div class="search-box">
+        <input type="text" id="username" placeholder="Enter GitHub username" />
+        <button id="btn">Search</button>
+      </div>
+
+      <div class="loading">
+        <span>loading...</span>
+      </div>
+
+      <!-- ERROR HANDLING-->
+      <div class="error">
+        <h1>User Not Found</h1>
+      </div>
+
+      <!-- USER INFO -->
+      <div class="user-card">
+        <img src="" alt="User Avatar" class="avatar" id="useravtar" />
+        <h2 class="username" id="use">username_here</h2>
+        <p class="bio" id="biod">
+          This is a short bio or description of the user.
+        </p>
+      </div>
+
+      <!-- PERFORMANCE CARDS -->
+      <div class="cards">
+        <div class="card">
+          <h2 id="repocount">Repositories</h2>
+          <p id="repocounts"></p>
+        </div>
+
+        <div class="card">
+          <h2 id="followerscount">Followers</h2>
+          <p id="followerscounts"></p>
+        </div>
+
+        <div class="card">
+          <h2 id="followingcount">Following</h2>
+          <p id="followingcounts"></p>
+        </div>
+
+        <div class="card">
+          <h2 id="toprepo">Top Repo</h2>
+          <p id="toprepos"></p>
+        </div>
+      </div>
+    </div>
+    <script src="github.js"></script>
+  </body>
+</html>
